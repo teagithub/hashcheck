@@ -1,4 +1,4 @@
-package com.abc.hashchek;
+package com.abc.tool;
 
 import java.io.*;
 import java.security.DigestInputStream;
