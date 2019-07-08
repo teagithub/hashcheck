@@ -115,7 +115,7 @@ public class hashchek {
         StringBuffer strbuf = new StringBuffer();
         if (args.length < 2) {
             System.out.println("Usage: java -jar hashchek.jar generate <directory path> <algorithm, e.g. MD5(default)> //生成hash校验文件 \n" +
-                    "Usage: java -jar hashchek check <directory path> <algorithm, e.g. MD5(default)> //校验hash码");
+                    "Usage: java -jar hashchek.jar check <directory path> <algorithm, e.g. MD5(default)> //校验hash码");
             return;
         }
         HashSet<String> operaSet = new HashSet<>();
@@ -123,7 +123,7 @@ public class hashchek {
         operaSet.add(CHECK);
         if (args.length >= 2 && (!operaSet.contains(args[0]))) {
             System.out.println("Usage: java -jar hashchek.jar generate <directory path> <algorithm, e.g. MD5(default)> //生成hash校验文件 \n" +
-                    "Usage: java -jar hashchek check <directory path> <algorithm, e.g. MD5(default)> //校验hash码");
+                    "Usage: java -jar hashchek.jar check <directory path> <algorithm, e.g. MD5(default)> //校验hash码");
             return;
         }
         String operation = args[0];
